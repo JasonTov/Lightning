@@ -7,15 +7,17 @@ int endY = 1000;
 void setup()
 {
   size(300,300);
-  strokeWeight(5);
-  background(255,255,255);
+  strokeWeight(15);
+  background(0,0,0);
   
 }
 void draw()
 {
-  stroke(255,0,0);
+  stroke(255,255,0);
   while(startY<300)
   {
+    strokeWeight(2+(300-endY)/50);
+    
     endY = startY+(int)(Math.random()*10);
     endX = startX-10+(int)(Math.random()*20);
     
@@ -38,5 +40,5 @@ void keyPressed()
 {
   size(300,300);
   strokeWeight(5);
-  background(255,255,255);
+  background(0,0,0);
 }
